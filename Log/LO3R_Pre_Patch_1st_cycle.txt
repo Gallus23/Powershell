@@ -1,0 +1,161 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting Pre-Patch Preparation
+This Script will shutdown and snapshot the RMQ, VUM, SPINITFIL,  WCS, VCDFIL components of myStack
+--------------------------------------------------------------------------------------------------------------------------------------
+
+importing Pre-Patch Modules
+ 
+-Date and time is: 19/01/2016 08:53:15
+Testing Connection to vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+Connecting to vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+WARNING: There were one or more problems with the server certificate for the server 
+lo3wpcorvcs001.dcsprod.dcsroot.local:443:
+
+* A certification chain processed correctly, but terminated in a root certificate which isn't trusted by the trust 
+provider.
+
+Certificate: [Subject]
+  E=support@vmware.com, CN=LO3WPCORVCS001.dcsprod.dcsroot.local, OU="VMware, Inc.", O="VMware, Inc."
+
+[Issuer]
+  E=support@vmware.com, CN=LO3WPCORVCS001.dcsprod.dcsroot.local, OU="VMware, Inc.", O="VMware, Inc."
+
+[Serial Number]
+  1211E180
+
+[Not Before]
+  01/02/2013 17:15:52
+
+[Not After]
+  30/01/2023 17:15:52
+
+[Thumbprint]
+  50D66BABF1EE32DF20CEAA9EFCCB6C6060A44498
+
+
+
+The server certificate is not valid.
+    
+WARNING: THE DEFAULT BEHAVIOR UPON INVALID SERVER CERTIFICATE WILL CHANGE IN A FUTURE RELEASE. To ensure scripts are 
+not affected by the change, use Set-PowerCLIConfiguration to set a value for the InvalidCertificateAction option.
+       
+Starting pre patch prep on lo3wrvcdrmq002
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM lo3wrvcdrmq002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+-Date and time is: 19/01/2016 08:53:56
+lo3wrvcdrmq002 has been successfully Shutdown 
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:54:30
+Creating a New Snapshot on  lo3wrvcdrmq002
+Checking New Snapshot is good.....
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:55:04
+Snapshot successfully taken on lo3wrvcdrmq002
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:55:04
+Powering up  lo3wrvcdrmq002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdrmq002 on lo3wrvcdrmq002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:55:33
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdrmq002 on lo3wrvcdrmq002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:55:47
+--------------------------------------------------------------------------------------------------------------------------------------
+lo3wrvcdrmq002 has successfully Powered On and is pingable
+***** Pre Patch Preparation has been successfully completed on lo3wrvcdrmq002 ****
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting pre patch prep on lo3wrvcdvum002
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM lo3wrvcdvum002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+-Date and time is: 19/01/2016 08:55:47
+lo3wrvcdvum002 has been successfully Shutdown 
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:56:21
+Creating a New Snapshot on  lo3wrvcdvum002
+Checking New Snapshot is good.....
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:56:54
+Snapshot successfully taken on lo3wrvcdvum002
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:56:54
+Powering up  lo3wrvcdvum002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdvum002 on lo3wrvcdvum002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:57:22
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdvum002 on lo3wrvcdvum002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:57:36
+--------------------------------------------------------------------------------------------------------------------------------------
+lo3wrvcdvum002 has successfully Powered On and is pingable
+***** Pre Patch Preparation has been successfully completed on lo3wrvcdvum002 ****
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting pre patch prep on lo3wrvcdwcs002
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM lo3wrvcdwcs002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+-Date and time is: 19/01/2016 08:57:36
+lo3wrvcdwcs002 has been successfully Shutdown 
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:57:59
+Creating a New Snapshot on  lo3wrvcdwcs002
+Checking New Snapshot is good.....
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:58:32
+Snapshot successfully taken on lo3wrvcdwcs002
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:58:32
+Powering up  lo3wrvcdwcs002 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdwcs002 on lo3wrvcdwcs002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:58:59
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging lo3wrvcdwcs002 on lo3wrvcdwcs002.dcsprod.dcsroot.local.....
+-Date and time is: 19/01/2016 08:59:13
+--------------------------------------------------------------------------------------------------------------------------------------
+lo3wrvcdwcs002 has successfully Powered On and is pingable
+***** Pre Patch Preparation has been successfully completed on lo3wrvcdwcs002 ****
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting pre patch prep on lo3urvcdfil001
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM lo3urvcdfil001 on vCenter lo3wpcorvcs001.dcsprod.dcsroot.local
+-Date and time is: 19/01/2016 08:59:13
+--------------------------------------------------------------------------------------------------------------------------------------
+The following error occurred 19/01/2016 08:59:24	Stop-VMGuest		Operation "Shutdown VM guest." failed for VM "lo3urvcdfil001" for the following reason: Cannot complete operation because VMware Tools is not running in this virtual machine.	
+lo3urvcdfil001 is currently PoweredOn
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pre-Patch Process completed
+-Date and time is: 19/01/2016 08:59:31
+ERROR: The error 19/01/2016 08:59:24	Stop-VMGuest		Operation "Shutdown VM guest." failed for VM "lo3urvcdfil001" for the following reason: Cannot complete operation because VMware Tools is not running in this virtual machine.	 was detected on lo3urvcdfil001
+--------------------------------------------------------------------------------------------------------------------------------------
+Environment state is as below.
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Name           PowerState
+----           ----------
+lo3urvcdfil001  PoweredOn
+lo3wrvcdwcs002  PoweredOn
+lo3wrvcdvum002  PoweredOn
+lo3wrvcdrmq002  PoweredOn
+
+
+
+VM             Name                              Description                                           
+--             ----                              -----------                                           
+lo3wrvcdrmq002 Prior_to_OS_Patch 19 January 2016 Created by first patch cycle script on 19 January 2016
+lo3wrvcdvum002 Prior_to_OS_Patch 19 January 2016 Created by first patch cycle script on 19 January 2016
+lo3wrvcdwcs002 Prior_to_OS_Patch 19 January 2016 Created by first patch cycle script on 19 January 2016
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 19/01/2016 08:59:48
+Disconnecting vSphere lo3wpcorvcs001.dcsprod.dcsroot.local.......

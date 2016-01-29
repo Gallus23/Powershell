@@ -1,0 +1,5 @@
+"Name","VMHost","MemoryGB","NumCpu","PowerState","myStatus"
+"sh1upds9dsva11","sh1upvcdesx011m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
+"sh1upds9dsva12","sh1upvcdesx012m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
+"sh1upds9dsva13","sh1upvcdesx013m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
+"sh1upds9dsva14","sh1upvcdesx014m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"

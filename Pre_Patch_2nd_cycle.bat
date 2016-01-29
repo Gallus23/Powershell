@@ -1,0 +1,6 @@
+rem This script run pre patch processes for the Second cycle of servers.
+
+d:
+cd \software\scripts
+
+powershell ".\Pre-patch-second-cycle.ps1  -location %1" > d:\software\scripts\log\%1_Pre_Patch_2nd_cycle.txt

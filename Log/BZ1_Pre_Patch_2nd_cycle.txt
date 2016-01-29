@@ -1,0 +1,132 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting Pre-Patch Preparation
+This Script will shutdown and snapshot the SSO and VCS components of myStack
+--------------------------------------------------------------------------------------------------------------------------------------
+
+importing Pre-Patch Modules
+ 
+-Date and time is: 26/01/2016 09:20:18
+Testing Connection to vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+Connecting to vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+WARNING: There were one or more problems with the server certificate for the 
+server bz1wpcorevcs41.dcsprod.dcsroot.local:443:
+
+* The X509 chain could not be built up to the root certificate.
+
+Certificate: [Subject]
+  E=support@vmware.com, CN=VMware default certificate, OU="VMware, Inc.", 
+O="VMware, Inc."
+
+[Issuer]
+  O=VMware Installer
+
+[Serial Number]
+  EE2D47DC
+
+[Not Before]
+  14/07/2011 02:37:33
+
+[Not After]
+  11/07/2021 02:37:33
+
+[Thumbprint]
+  881CA8AE8AFF1B01DB96FD64D8F35FAC32FD3A8E
+
+
+
+The server certificate is not valid.
+    
+WARNING: THE DEFAULT BEHAVIOR UPON INVALID SERVER CERTIFICATE WILL CHANGE IN A 
+FUTURE RELEASE. To ensure scripts are not affected by the change, use 
+Set-PowerCLIConfiguration to set a value for the InvalidCertificateAction 
+option.
+       
+Starting pre patch prep on 
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM BZ1wpvcdsso002 on vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+-Date and time is: 26/01/2016 09:20:24
+BZ1wpvcdsso002 has been successfully Shutdown 
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:20:49
+Creating a New Snapshot on  BZ1wpvcdsso002
+Checking New Snapshot is good.....
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:21:00
+Snapshot successfully taken on BZ1wpvcdsso002
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:21:00
+Powering up  BZ1wpvcdsso002 on vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdsso002 on BZ1wpvcdsso002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:21:20
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdsso002 on BZ1wpvcdsso002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:21:34
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdsso002 on BZ1wpvcdsso002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:21:48
+--------------------------------------------------------------------------------------------------------------------------------------
+BZ1wpvcdsso002 has successfully Powered On and is pingable
+***** Pre Patch Preparation has been successfully completed on BZ1wpvcdsso002 ****
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting pre patch prep on 
+--------------------------------------------------------------------------------------------------------------------------------------
+Shutting down VM BZ1wpvcdvcs002 on vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+-Date and time is: 26/01/2016 09:21:49
+BZ1wpvcdvcs002 has been successfully Shutdown 
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:22:11
+Creating a New Snapshot on  BZ1wpvcdvcs002
+Checking New Snapshot is good.....
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:22:23
+Snapshot successfully taken on BZ1wpvcdvcs002
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:22:23
+Powering up  BZ1wpvcdvcs002 on vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdvcs002 on BZ1wpvcdvcs002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:22:42
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdvcs002 on BZ1wpvcdvcs002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:22:56
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pinging BZ1wpvcdvcs002 on BZ1wpvcdvcs002.dcsprod.dcsroot.local.....
+-Date and time is: 26/01/2016 09:23:10
+--------------------------------------------------------------------------------------------------------------------------------------
+BZ1wpvcdvcs002 has successfully Powered On and is pingable
+***** Pre Patch Preparation has been successfully completed on BZ1wpvcdvcs002 ****
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+Pre-Patch Process completed
+-Date and time is: 26/01/2016 09:23:10
+No Errors found in Pre-Patch Preparation
+--------------------------------------------------------------------------------------------------------------------------------------
+Environment state is as below.
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Name           PowerState
+----           ----------
+bz1wpvcdvcs002  PoweredOn
+bz1wpvcdsso002  PoweredOn
+
+
+
+VM             Name                              Description                   
+--             ----                              -----------                   
+bz1wpvcdvcs002 Prior_to_OS_Patch 26 January 2016 Created by first patch cycl...
+bz1wpvcdsso002 Prior_to_OS_Patch 26 January 2016 Created by first patch cycl...
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 09:23:14
+Disconnecting vSphere bz1wpcorevcs41.dcsprod.dcsroot.local.......

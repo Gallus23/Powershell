@@ -1,0 +1,62 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting Post-Patch Housekeeping
+Post Patch Commit.. Script will Delete the Pre-Patch Snapshots taken as roll back prior to OS Patching...
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 10:30:27
+Testing Connection to vCenter au1wpcorevcs01.dcsprod.dcsroot.local
+Connecting to vCenter au1wpcorevcs01.dcsprod.dcsroot.local
+WARNING: There were one or more problems with the server certificate for the 
+server au1wpcorevcs01.dcsprod.dcsroot.local:443:
+
+* A certification chain processed correctly, but terminated in a root 
+certificate which isn't trusted by the trust provider.
+
+Certificate: [Subject]
+  E=support@vmware.com, CN=AU1WPCOREVCS01.dcsprod.dcsroot.local, OU="VMware, 
+Inc.", O="VMware, Inc."
+
+[Issuer]
+  E=support@vmware.com, CN=AU1WPCOREVCS01.dcsprod.dcsroot.local, OU="VMware, 
+Inc.", O="VMware, Inc."
+
+[Serial Number]
+  2861E30B
+
+[Not Before]
+  18/04/2012 19:35:23
+
+[Not After]
+  16/04/2022 19:35:23
+
+[Thumbprint]
+  96C2604481316A603FA0083FB624C27EFCBE2F42
+
+
+
+The server certificate is not valid.
+    
+WARNING: THE DEFAULT BEHAVIOR UPON INVALID SERVER CERTIFICATE WILL CHANGE IN A 
+FUTURE RELEASE. To ensure scripts are not affected by the change, use 
+Set-PowerCLIConfiguration to set a value for the InvalidCertificateAction 
+option.
+       
+Listing all current Snapshots
+--------------------------------------------------------------------------------------------------------------------------------------
+Listing Snapshots
+ 
+@{VM=au1upvcdfil001; Name=Prior_to_OS_Patch 19 January 2016; Description=Created by first patch cycle script on 19 January 2016} @{VM=au1upvcdvcd001; Name=Prior_to_OS_Patch 19 January 2016; Description=Created by first patch cycle script on 19 January 2016}
+--------------------------------------------------------------------------------------------------------------------------------------
+Removing Snapshots .....
+Date and time is: 26/01/2016 10:30:50
+Starting snapshot removal on @{VM=au1upvcdfil001; Name=Prior_to_OS_Patch 19 January 2016; Description=Created by first patch cycle script on 19 January 2016} 
+Compeleted
+Date and time is: 26/01/2016 10:32:10
+Starting snapshot removal on @{VM=au1upvcdvcd001; Name=Prior_to_OS_Patch 19 January 2016; Description=Created by first patch cycle script on 19 January 2016} 
+Compeleted
+Script completed
+--------------------------------------------------------------------------------------------------------------------------------------
+Snapshots at end of process... there should be none listed
+No Pre-Patch Snapshots found
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 26/01/2016 10:33:02
+Disconnecting vSphere au1wpcorevcs01.dcsprod.dcsroot.local.......

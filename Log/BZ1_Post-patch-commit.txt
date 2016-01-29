@@ -1,0 +1,72 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Starting Post-Patch Housekeeping
+Post Patch Commit.. Script will Delete the Pre-Patch Snapshots taken as roll back prior to OS Patching...
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 29/01/2016 08:33:11
+Testing Connection to vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+Connecting to vCenter bz1wpcorevcs41.dcsprod.dcsroot.local
+WARNING: There were one or more problems with the server certificate for the 
+server bz1wpcorevcs41.dcsprod.dcsroot.local:443:
+
+* The X509 chain could not be built up to the root certificate.
+
+Certificate: [Subject]
+  E=support@vmware.com, CN=VMware default certificate, OU="VMware, Inc.", 
+O="VMware, Inc."
+
+[Issuer]
+  O=VMware Installer
+
+[Serial Number]
+  EE2D47DC
+
+[Not Before]
+  14/07/2011 02:37:33
+
+[Not After]
+  11/07/2021 02:37:33
+
+[Thumbprint]
+  881CA8AE8AFF1B01DB96FD64D8F35FAC32FD3A8E
+
+
+
+The server certificate is not valid.
+    
+WARNING: THE DEFAULT BEHAVIOR UPON INVALID SERVER CERTIFICATE WILL CHANGE IN A 
+FUTURE RELEASE. To ensure scripts are not affected by the change, use 
+Set-PowerCLIConfiguration to set a value for the InvalidCertificateAction 
+option.
+       
+Listing all current Snapshots
+--------------------------------------------------------------------------------------------------------------------------------------
+Listing Snapshots
+ 
+@{VM=bz1wpvcdvcs002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} @{VM=bz1wpvcdsso002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} @{VM=bz1wpvcdwcs002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} @{VM=bz1wpvcdvum002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} @{VM=bz1wpvcdrmq002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} @{VM=bz1upvcdfil001; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016}
+--------------------------------------------------------------------------------------------------------------------------------------
+Removing Snapshots .....
+Date and time is: 29/01/2016 08:33:24
+Starting snapshot removal on @{VM=bz1wpvcdvcs002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Date and time is: 29/01/2016 08:35:08
+Starting snapshot removal on @{VM=bz1wpvcdsso002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Date and time is: 29/01/2016 08:36:43
+Starting snapshot removal on @{VM=bz1wpvcdwcs002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Date and time is: 29/01/2016 08:38:51
+Starting snapshot removal on @{VM=bz1wpvcdvum002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Date and time is: 29/01/2016 08:43:12
+Starting snapshot removal on @{VM=bz1wpvcdrmq002; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Date and time is: 29/01/2016 08:44:35
+Starting snapshot removal on @{VM=bz1upvcdfil001; Name=Prior_to_OS_Patch 26 January 2016; Description=Created by first patch cycle script on 26 January 2016} 
+Compeleted
+Script completed
+--------------------------------------------------------------------------------------------------------------------------------------
+Snapshots at end of process... there should be none listed
+No Pre-Patch Snapshots found
+--------------------------------------------------------------------------------------------------------------------------------------
+-Date and time is: 29/01/2016 08:45:35
+Disconnecting vSphere bz1wpcorevcs41.dcsprod.dcsroot.local.......

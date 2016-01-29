@@ -1,0 +1,4 @@
+"HostName","Status","ConnectionState","Max_Mem_%","Ave_Mem_%","Max_CPU_%","Ave_CPU_%"
+"bj1upvcdesx011m.dcsutil.dcsroot.local","mystack-warn","Connected","69.68","68.81","27.98","21.75"
+"bj1upvcdesx012m.dcsutil.dcsroot.local","mystack-normal","Connected","23.03","22.82","12.99","6.43"
+"bj1upvcdesx013m.dcsutil.dcsroot.local","mystack-normal","Connected","16.84","16.83","4.75","3.28"
