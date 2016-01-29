@@ -2,16 +2,18 @@
 param(
 	[string]$Location
 	)
-	
+
 Add-PSSnapin vmware.vimautomation.cloud
 
 $vCloudFQDN=$location + "-mystack.pearson.com"
 
+#This is a comment
+
 #Test connection to destination vCenter
-Write-Host "Testing Connection to vCloud" -foregroundcolor "magenta" 
+Write-Host "Testing Connection to vCloud" -foregroundcolor "magenta"
 if(!(Test-Connection -Cn $vCloudFQDN -BufferSize 16 -Count 1 -ea 0 -quiet))
 {
-write-host "Connection to $vCloudFQDN failed cannot ping" -foregroundcolor "red" 
+write-host "Connection to $vCloudFQDN failed cannot ping" -foregroundcolor "red"
 exit
 }
 
