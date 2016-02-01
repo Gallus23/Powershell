@@ -17,7 +17,7 @@ $Global:lasterror_vm = "None"
 #Main Script - Post Patch Commit
 if ($Location -eq "")
 {
-     Write-Host "-Location Parameter required, please"
+     Write-Host "-Location Parameter required, please. pretty please. Thanks"
      exit
 }
 
