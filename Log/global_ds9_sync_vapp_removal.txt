@@ -1,5 +1,5 @@
  
-Starting Script 28/01/2016 18:00:01
+Starting Script 29/01/2016 18:00:06
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -21,14 +21,14 @@ Name                           User                           Org
 lo1-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:00:45
+Completed 29/01/2016 18:01:00
 
 
  
-Starting Script 28/01/2016 18:00:46
+Starting Script 29/01/2016 18:01:02
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -50,14 +50,14 @@ Name                           User                           Org
 lo3-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:01:29
+Completed 29/01/2016 18:01:49
 
 
  
-Starting Script 28/01/2016 18:01:31
+Starting Script 29/01/2016 18:01:51
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -79,14 +79,14 @@ Name                           User                           Org
 nj2-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:02:16
+Completed 29/01/2016 18:02:34
 
 
  
-Starting Script 28/01/2016 18:02:17
+Starting Script 29/01/2016 18:02:35
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -108,14 +108,14 @@ Name                           User                           Org
 icd-mystack.pearson.com        DS9_Sync_Test                  myStack-Test     
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:03:27
+Completed 29/01/2016 18:03:26
 
 
  
-Starting Script 28/01/2016 18:03:29
+Starting Script 29/01/2016 18:03:27
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -137,14 +137,14 @@ Name                           User                           Org
 au1-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:04:24
+Completed 29/01/2016 18:04:20
 
 
  
-Starting Script 28/01/2016 18:04:26
+Starting Script 29/01/2016 18:04:22
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -166,14 +166,14 @@ Name                           User                           Org
 sh1-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:05:33
+Completed 29/01/2016 18:05:29
 
 
  
-Starting Script 28/01/2016 18:05:35
+Starting Script 29/01/2016 18:05:31
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -195,14 +195,14 @@ Name                           User                           Org
 bj1-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:06:47
+Completed 29/01/2016 18:06:33
 
 
  
-Starting Script 28/01/2016 18:06:49
+Starting Script 29/01/2016 18:06:35
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -224,14 +224,14 @@ Name                           User                           Org
 sg8-mystack.pearson.com        DS9_Sync_Test                  test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:07:47
+Completed 29/01/2016 18:07:31
 
 
  
-Starting Script 28/01/2016 18:07:49
+Starting Script 29/01/2016 18:07:32
 --------------------------------------------------------------------------------------------------------------------------------------
 Loading CORE and CLOUD plugins for powershell
           Welcome to VMware vSphere PowerCLI!
@@ -253,9 +253,9 @@ Name                           User                           Org
 bz1-mystack.pearson.com        DS9_Sync_Test                  Test1            
 Stopping the vApp's below and the deleting them...
 
-Name  : Thursday-28-01
+Name  : Friday-29-01
 Owner : ds9_sync_test
 
-Completed 28/01/2016 18:08:53
+Completed 29/01/2016 18:08:35
 
 

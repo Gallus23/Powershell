@@ -28,7 +28,7 @@ write-host "--------------------------------------------------------------------
 
 add-pssnapin -name VMware.VimAutomation.Core
 
-
+#Connect to relevant vCenter
 switch ($Location.ToLower())
     {
     "lo3r" {
@@ -52,22 +52,22 @@ if ($Location -eq "lo3r")    {    $Location = "lo3"    }
 #Test connection to destination vCenter
 write-host "-Date and time is: $((Get-Date).ToString())"
 
-Write-Host "Testing Connection to vCenter $ManvCenter" -foregroundcolor "magenta" 
+Write-Host "Testing Connection to vCenter $ManvCenter" -foregroundcolor "magenta"
 if(!(Test-Connection -Cn $ManvCenter -BufferSize 16 -Count 1 -ea 0 -quiet))
 {
-write-host "Connection to $ManvCenter failed cannot ping" -foregroundcolor "red" 
+write-host "Connection to $ManvCenter failed cannot ping" -foregroundcolor "red"
 $Global:lasterror = "Connection to $ManvCenter failed cannot ping"
 }
 
 #--------------------------------------------------------------------------------------------------------------------------------------
 #Connect to vCenter
-Write-Host "Connecting to vCenter $ManvCenter" -foregroundcolor "yellow"     
+Write-Host "Connecting to vCenter $ManvCenter" -foregroundcolor "yellow"
 
 try
 {
     Connect-VIServer -Server  $ManvCenter -ErrorAction Stop | Out-Null
 }
-catch 
+catch
 {
     Write-Host "failed to connect to vCenter. Error is $_"
     $Global:lasterror = $_
@@ -121,9 +121,9 @@ $vcdvcdtwo_ip = $vcdvcdtwo + ".pearsontc.com"
 
 write-host "Listing all current Snapshots"
 
-$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  “Prior_to_OS_Patch*”}  | select VM, Name, description
-   
-    
+$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  ï¿½Prior_to_OS_Patch*ï¿½}  | select VM, Name, description
+
+
         if ($snaps.Count -eq 0)
         {
         Write-Host "No Pre-Patch Snapshots found"
@@ -136,15 +136,15 @@ $snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction 
         write-host $snaps
         write-host "--------------------------------------------------------------------------------------------------------------------------------------"
         write-host "Removing Snapshots ....."
-    
+
             foreach ($snap in $snaps)
-            {    
+            {
                 try
                 {
-                    
+
                     write-host "Date and time is: $((Get-Date).ToString())"
                     write-host "Starting snapshot removal on $snap "
-                    Get-VM $snap.vm |  get-snapshot  | where {$_.name -match  “Prior_to_OS_Patch*”} | Remove-Snapshot -Confirm:$false
+                    Get-VM $snap.vm |  get-snapshot  | where {$_.name -match  ï¿½Prior_to_OS_Patch*ï¿½} | Remove-Snapshot -Confirm:$false
                     write-host "Compeleted"
                 }
             catch
@@ -161,7 +161,7 @@ write-host "Script completed"
 write-host "--------------------------------------------------------------------------------------------------------------------------------------"
 write-host "Snapshots at end of process... there should be none listed"
 
-$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  “Prior_to_OS_Patch*”}  | select VM, Name, description
+$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  ï¿½Prior_to_OS_Patch*ï¿½}  | select VM, Name, description
 
 if ($snaps.Count -eq 0)
 {
@@ -182,7 +182,3 @@ write-host "-Date and time is: $((Get-Date).ToString())"
 write-host "Disconnecting vSphere $ManvCenter......."
 disconnect-viserver -server $ManvCenter -Confirm:$false -force
 #--------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-

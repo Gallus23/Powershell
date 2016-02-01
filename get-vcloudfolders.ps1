@@ -8,6 +8,7 @@ Add-PSSnapin vmware.vimautomation.cloud
 $vCloudFQDN=$location + "-mystack.pearson.com"
 
 #This is a comment
+#this is another comment
 
 #Test connection to destination vCenter
 Write-Host "Testing Connection to vCloud" -foregroundcolor "magenta"
