@@ -121,7 +121,7 @@ $vcdvcdtwo_ip = $vcdvcdtwo + ".pearsontc.com"
 
 write-host "Listing all current Snapshots"
 
-$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  �Prior_to_OS_Patch*�}  | select VM, Name, description
+$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  "Prior_to_OS_Patch"}  | select VM, Name, description
 
 
         if ($snaps.Count -eq 0)
@@ -144,7 +144,7 @@ $snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction 
 
                     write-host "Date and time is: $((Get-Date).ToString())"
                     write-host "Starting snapshot removal on $snap "
-                    Get-VM $snap.vm |  get-snapshot  | where {$_.name -match  �Prior_to_OS_Patch*�} | Remove-Snapshot -Confirm:$false
+                    Get-VM $snap.vm |  get-snapshot  | where {$_.name -match  "Prior_to_OS_Patch"} | Remove-Snapshot -Confirm:$false
                     write-host "Compeleted"
                 }
             catch
@@ -161,7 +161,7 @@ write-host "Script completed"
 write-host "--------------------------------------------------------------------------------------------------------------------------------------"
 write-host "Snapshots at end of process... there should be none listed"
 
-$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  �Prior_to_OS_Patch*�}  | select VM, Name, description
+$snaps = get-vm  $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone -ErrorAction Continue | get-snapshot  | where {$_.name -match  "Prior_to_OS_Patch"}  | select VM, Name, description
 
 if ($snaps.Count -eq 0)
 {
