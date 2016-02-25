@@ -1,5 +1,5 @@
  
-Starting Script at  01/02/2016 07:00:01
+Starting Script at  25/02/2016 07:00:01
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -20,7 +20,7 @@ Connecting to  lo1-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 lo1-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -41,7 +41,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:02:07
+Starting Script at  25/02/2016 07:02:01
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -62,7 +62,7 @@ Connecting to  lo3-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 lo3-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -83,7 +83,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:04:38
+Starting Script at  25/02/2016 07:04:15
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -104,7 +104,7 @@ Connecting to  nj2-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 nj2-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -125,7 +125,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:06:37
+Starting Script at  25/02/2016 07:06:02
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -146,7 +146,7 @@ Connecting to  icd-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 icd-mystack.pearson.com        DS9_Sync_Test                  myStack-Test     
-creating vApp  Monday-01-02  in  myStack-Test
+creating vApp  Thursday-25-02  in  myStack-Test
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -167,7 +167,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:09:15
+Starting Script at  25/02/2016 07:08:26
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -188,7 +188,7 @@ Connecting to  au1-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 au1-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -209,7 +209,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:11:14
+Starting Script at  25/02/2016 07:10:12
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -230,7 +230,7 @@ Connecting to  sh1-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 sh1-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -251,7 +251,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:13:30
+Starting Script at  25/02/2016 07:12:13
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -272,7 +272,7 @@ Connecting to  bj1-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 bj1-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -293,7 +293,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:15:40
+Starting Script at  25/02/2016 07:14:20
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -314,7 +314,7 @@ Connecting to  sg8-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 sg8-mystack.pearson.com        DS9_Sync_Test                  test1            
-creating vApp  Monday-01-02  in  test1
+creating vApp  Thursday-25-02  in  test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...
@@ -335,7 +335,7 @@ Completed
 
 
  
-Starting Script at  01/02/2016 07:17:34
+Starting Script at  25/02/2016 07:16:14
 Trying to load snapin VMware.VimAutomation.Core
 VMware.VimAutomation.Core loaded
 Trying to load snapin VMware.VimAutomation.Cloud
@@ -356,7 +356,7 @@ Connecting to  bz1-mystack.pearson.com  as  DS9_Sync_Test  ..........
 Name                           User                           Org              
 ----                           ----                           ---              
 bz1-mystack.pearson.com        DS9_Sync_Test                  Test1            
-creating vApp  Monday-01-02  in  Test1
+creating vApp  Thursday-25-02  in  Test1
 Getting the catalogs available to the user logged in...
 Getting the templates from the specified catalog...
 Getting the template information specified if matched...

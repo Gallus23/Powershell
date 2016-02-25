@@ -182,3 +182,4 @@ write-host "-Date and time is: $((Get-Date).ToString())"
 write-host "Disconnecting vSphere $ManvCenter......."
 disconnect-viserver -server $ManvCenter -Confirm:$false -force
 #--------------------------------------------------------------------------------------------------------------------------------------
+send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Post Patch commit, log attached" -body "Pre O/S patch Snapshots on $rmq, $vum, $wcs, $vcdfil, $sso, $vcs, $vcdvcdone should now have been deleted, commiting O/S patches. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com

@@ -1,4 +1,4 @@
 "Name","VMHost","MemoryGB","NumCpu","PowerState","myStatus"
 "BZ1UPDS9DSVA11","bz1upvcdesx011m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
 "BZ1UPDS9DSVA12","bz1upvcdesx012m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
-"BZ1UPDS9DSVA13","bz1upvcdesx013m.dcsutil.dcsroot.local","8","4","PoweredOff","mystack-alarm"
+"BZ1UPDS9DSVA13","bz1upvcdesx013m.dcsutil.dcsroot.local","8","4","PoweredOn","mystack-normal"
