@@ -1,8 +1,0 @@
-"HostName","Status","ConnectionState","Max_Mem_%","Ave_Mem_%","Max_CPU_%","Ave_CPU_%"
-"lo1upvcdesx011m.dcsutil.dcsroot.local","mystack-alarm","Connected","83.20","82.32","34.80","28.48"
-"lo1upvcdesx012m.dcsutil.dcsroot.local","mystack-alarm","Connected","95.67","95.11","40.82","28.14"
-"lo1upvcdesx013m.dcsutil.dcsroot.local","mystack-alarm","Connected","87.60","86.80","42.91","33.57"
-"lo1upvcdesx014m.dcsutil.dcsroot.local","mystack-alarm","Connected","95.78","95.46","38.32","28.06"
-"lo1upvcdesx015m.dcsutil.dcsroot.local","mystack-alarm","Connected","94.74","93.32","30.17","25.54"
-"lo1upvcdesx016m.dcsutil.dcsroot.local","mystack-alarm","Connected","89.90","89.10","56.98","29.29"
-"lo1upvcdesx017m.dcsutil.dcsroot.local","mystack-alarm","Connected","88.29","87.66","34.51","26.60"

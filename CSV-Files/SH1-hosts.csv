@@ -1,5 +1,0 @@
-"HostName","Status","ConnectionState","Max_Mem_%","Ave_Mem_%","Max_CPU_%","Ave_CPU_%"
-"sh1upvcdesx011m.dcsutil.dcsroot.local","mystack-warn","Connected","67.99","67.71","25.10","20.98"
-"sh1upvcdesx012m.dcsutil.dcsroot.local","mystack-normal","Connected","42.16","41.73","19.60","16.72"
-"sh1upvcdesx013m.dcsutil.dcsroot.local","mystack-warn","Connected","61.14","61.07","17.95","13.04"
-"sh1upvcdesx014m.dcsutil.dcsroot.local","mystack-normal","Connected","37.41","37.34","24.85","18.94"
