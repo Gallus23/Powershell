@@ -44,9 +44,9 @@ switch ($Location.ToLower())
 #    "icd" {$ManvCenter = "icdwpcorevcs41.dcsprod.dcsroot.local"}
 #    "nj2" {$ManvCenter = "nj2wpcorevcs41.dcsprod.dcsroot.local"}
     "bz1" {$ManvCenter = "bz1wpcorevcs41.dcsprod.dcsroot.local"}
-#    "sg8" {$ManvCenter = "sg8wpcorevcs01.dcsprod.dcsroot.local"}
-#    "sh1" {$ManvCenter = "sh1wpcorevcs01.dcsprod.dcsroot.local"}
-#    "bj1" {$ManvCenter = "bj1wpcorevcs01.dcsprod.dcsroot.local"}
+    "sg8" {$ManvCenter = "sg8wpcorevcs01.dcsprod.dcsroot.local"}
+    "sh1" {$ManvCenter = "sh1wpcorevcs01.dcsprod.dcsroot.local"}
+    "bj1" {$ManvCenter = "bj1wpcorevcs01.dcsprod.dcsroot.local"}
     "au1" {$ManvCenter = "au1wpcorevcs01.dcsprod.dcsroot.local"}
      }
 
