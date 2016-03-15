@@ -40,7 +40,7 @@ switch ($Location.ToLower())
         $srvprefix = "r"
         }
      "lo3" {$ManvCenter = "lo3wpcorvcs001.dcsprod.dcsroot.local"}
-#    "lo1" {$ManvCenter = "lo1wpcorevcs01.dcsprod.dcsroot.local"}
+    "lo1" {$ManvCenter = "lo1wpcorevcs01.dcsprod.dcsroot.local"}
 #    "icd" {$ManvCenter = "icdwpcorevcs41.dcsprod.dcsroot.local"}
 #    "nj2" {$ManvCenter = "nj2wpcorevcs41.dcsprod.dcsroot.local"}
     "bz1" {$ManvCenter = "bz1wpcorevcs41.dcsprod.dcsroot.local"}
@@ -50,10 +50,12 @@ switch ($Location.ToLower())
     "au1" {$ManvCenter = "au1wpcorevcs01.dcsprod.dcsroot.local"}
      }
 
-if ($Location -eq "lo3r")    {    $Location = "lo3"    }
+
 
 #Sending email to mystack-OPS to inform them of start of process
-send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Starting Cycle 2 Pre-Patch-Prep"  -body "The servers $vcs, $sso  will be shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Starting Cycle 2 Pre-Patch-Prep"  -body "The servers $vcs, $sso  will be shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_2nd_cycle.txt" -smtpServer relay.mx.pearson.com
+
+if ($Location -eq "lo3r")    {    $Location = "lo3"    }
 
 #--------------------------------------------------------------------------------------------------------------------------------------
 #Test connection to destination vCenter
@@ -165,11 +167,11 @@ write-host "-Date and time is: $((Get-Date).ToString())"
 write-host "Disconnecting vSphere $ManvCenter......."
 disconnect-viserver -server $ManvCenter -Confirm:$false -force
 #--------------------------------------------------------------------------------------------------------------------------------------
-send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Cycle 2 Pre-Patch-Prep log attached"  -body "The servers $vcs, $sso  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Cycle 2 Pre-Patch-Prep log attached"  -body "The servers $vcs, $sso  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_2nd_cycle.txt" -smtpServer relay.mx.pearson.com
 write-host "Sleeping before emailing environment check to mystack ops"
 
 sleep 3600
-send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - O/S Patch completion (estimate)"  -body "The servers $vcs, $sso Should now have been patched. Verify and confirm operation. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location - O/S Patch completion (estimate)"  -body "The servers $vcs, $sso Should now have been patched. Verify and confirm operation. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
 
 #--------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------
