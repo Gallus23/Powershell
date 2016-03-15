@@ -50,11 +50,6 @@ switch ($Location.ToLower())
     "au1" {$ManvCenter = "au1wpcorevcs01.dcsprod.dcsroot.local"}
      }
 
-
-#Send email to myStack Ops to inform them of process
-send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location - Starting Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  will be shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_3rd_cycle.txt" -smtpServer relay.mx.pearson.com
-
-
 if ($Location -eq "lo3r")    {    $Location = "lo3"    }
 
 #--------------------------------------------------------------------------------------------------------------------------------------
@@ -93,6 +88,11 @@ $vcdvcdone_ip = $vcdvcdone + ".pearsontc.com"
 
 $vcdvcdtwo = $Location + "u" + $srvprefix + "vcdvcd002"
 $vcdvcdtwo_ip = $vcdvcdtwo + ".pearsontc.com"
+
+
+#Send email to myStack Ops to inform them of process
+send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location $srvprefix - Starting Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  will be shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_3rd_cycle.txt" -smtpServer relay.mx.pearson.com
+
 
 #vcdvcdone
     if ($Global:lasterror -eq "None")
@@ -167,12 +167,12 @@ write-host "Disconnecting vSphere $ManvCenter......."
 disconnect-viserver -server $ManvCenter -Confirm:$false -force
 #--------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------
-send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_3rd_cycle.txt" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location $srvprefix - Completion of Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766 full log on \\LO1WPVCDOPS002.DCSPROD.DCSROOT.LOCAL\log\$location-Pre_Patch_3rd_cycle.txt" -smtpServer relay.mx.pearson.com
 #--------------------------------------------------------------------------------------------------------------------------------------
 write-host "Sleeping before emailing environment check to mystack ops"
 
 sleep 3600
-send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location - O/S Patch completion (estimate)"  -body "The servers $vcdvcdone, $vcdvcdtwo Should now have been patched. Verify and confirm operation. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "mystack-operations@pearson.com" -from "mystack.ospatching@pearson.com" -subject "$location $srvprefix - O/S Patch completion (estimate)"  -body "The servers $vcdvcdone, $vcdvcdtwo Should now have been patched. Verify and confirm operation. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
 
 
 
