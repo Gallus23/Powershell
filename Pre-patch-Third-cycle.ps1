@@ -52,6 +52,9 @@ switch ($Location.ToLower())
 
 if ($Location -eq "lo3r")    {    $Location = "lo3"    }
 
+#Send email to myStack Ops to inform them of process
+send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Starting Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  will be shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+
 #--------------------------------------------------------------------------------------------------------------------------------------
 #Test connection to destination vCenter
 write-host "-Date and time is: $((Get-Date).ToString())"
@@ -162,7 +165,7 @@ write-host "Disconnecting vSphere $ManvCenter......."
 disconnect-viserver -server $ManvCenter -Confirm:$false -force
 #--------------------------------------------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------------------------------------------
-send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Cycle 3 Pre-Patch-Prep, log attached"  -body "The servers $vcdvcdone, $vcdvcdtwo  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
+send-mailmessage -to "Mike Howard <mike.howard@pearson.com>" -from "mystack.ospatching@pearson.com" -subject "$location - Completion of Cycle 3 Pre-Patch-Prep"  -body "The servers $vcdvcdone, $vcdvcdtwo  have been shutdown, snapshotted and powered back on prior to having O/S patches applied with BSA. More info on https://mycloud.atlassian.net/wiki/pages/viewpage.action?pageId=37486766" -smtpServer relay.mx.pearson.com
 #--------------------------------------------------------------------------------------------------------------------------------------
 
 sleep 3600
