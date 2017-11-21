@@ -85,6 +85,8 @@ Function Create-Chart() {
 
 	#Set the title of the Chart to the current date and time 
 	$Title = new-object System.Windows.Forms.DataVisualization.Charting.Title 
+	$Font = New-Object System.Drawing.Font @('Microsoft Sans Serif','12', [System.Drawing.FontStyle]::Bold)
+	$ChartTitle.Font =$Font
 	$Chart.Titles.Add($Title) 
 	$Chart.Titles[0].Text = $ChartTitle
 
